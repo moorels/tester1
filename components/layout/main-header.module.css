@@ -1,0 +1,85 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 1rem 10%;
+    height: 5rem;
+    background-color: #202020;
+    
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Fira', sans-serif;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fa0bfa;
+  }
+  
+  .logo a {
+    text-decoration: none;
+    color: #fa0bfa;
+  }
+  
+  .navigation a {
+    text-decoration: none;
+    color: #fa0bfa;
+    font-size: 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .logo {
+      font-size: 2.5rem;
+      color: #fa0bfa;
+    }
+  
+    .navigation a {
+      font-size: 1.5rem;
+      color: #fa0bfa;
+    }
+  }
+
+  .rotateIn {
+    -webkit-animation-name: rotateIn;
+    animation-name: rotateIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes rotateIn {
+    0% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, -200deg);
+    transform: rotate3d(0, 0, 1, -200deg);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+    }
+    }
+    @keyframes rotateIn {
+    0% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, -200deg);
+    transform: rotate3d(0, 0, 1, -200deg);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+    }
+    } 
